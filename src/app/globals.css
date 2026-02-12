@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #62a403
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+
+
+.main_banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../../public/images/backgroundimage.webp) center / cover;
+  opacity: 1;
+  z-index: -2;
+  filter: brightness(0.8) contrast(1.1);
+}
+
+.main_banner::after 
+{
+      content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 20, 40, 0.5) 0%, rgba(0, 40, 20, 0.5) 100%);
+    z-index: -1;
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.3);
+}
