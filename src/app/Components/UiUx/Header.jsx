@@ -148,8 +148,8 @@ const Header = () => {
                 <a href="tel:+919872487850" className="block text-black font-semibold text-lg">
                   +91 98724 87850
                 </a>
-                <a href="mailto:gulrajtradersmohali@gmail.com" className="block text-black/70 text-base break-words">
-                  gulrajtradersmohali@gmail.com
+                <a href="mailto:grtrader37@gmail.com" className="block text-black/70 text-base break-words">
+                  grtrader37@gmail.com
                 </a>
               </div>
             </div>

@@ -184,7 +184,7 @@ const ProductBlock = ({ id, reverse, product }) => {
             </Card>
 
             <div className="mt-8 md:mt-10 flex gap-4 flex-wrap">
-              <Link href={"mailto:gulrajtradersmohali@gmail.com"}>
+              <Link href={"mailto:grtrader37@gmail.com"}>
                 <Button btnname={"Request Quote"} />
               </Link>
               <Link href={"tel:+919872487850"}>

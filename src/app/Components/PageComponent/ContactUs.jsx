@@ -16,9 +16,9 @@ const contactInfo = [
   },
   {
     label: "Email",
-    value: "gulrajtradersmohali@gmail.com",
+    value: "grtrader37@gmail.com",
     note: "We reply within 24 hours",
-    href: "mailto:gulrajtradersmohali@gmail.com"
+    href: "mailto:grtrader37@gmail.com"
   }
 ];
 
@@ -79,7 +79,7 @@ export const ContactBanner = () => {
           <a href="#contact-details">
             <Button btnname={"View Details"} />
           </a>
-          <a href="mailto:gulrajtradersmohali@gmail.com">
+          <a href="mailto:grtrader37@gmail.com">
             <Button btnname={"Email Us"} />
           </a>
         </div>

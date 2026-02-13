@@ -23,7 +23,7 @@ const ReadytoTrade = () => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-2 md:gap-10 pt-8 gap-y-4">
-          <Link href={"mailto:gulrajtradersmohali@gmail.com"}>
+          <Link href={"mailto:grtrader37@gmail.com"}>
             <Button btnname={"Get Export Quote"} />
           </Link>
           <Link href={"tel:+919915083667"}>

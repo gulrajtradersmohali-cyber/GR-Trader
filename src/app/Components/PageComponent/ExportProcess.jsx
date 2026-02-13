@@ -390,7 +390,7 @@ export const ExportSupport = () => {
               Get pricing, export support, and documentation guidance directly.
             </p>
             <div className="mt-10 flex gap-4 flex-wrap">
-              <Link href={"mailto:gulrajtradersmohali@gmail.com"}>
+              <Link href={"mailto:grtrader37@gmail.com"}>
                 <Button btnname={"Email Us"} />
               </Link>
               <Link href={"tel:+919915083667"}>

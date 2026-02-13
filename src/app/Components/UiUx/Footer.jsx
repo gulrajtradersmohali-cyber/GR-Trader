@@ -100,8 +100,8 @@ const Footer = () => {
               <p>
                 <span className="font-semibold text-black">Email:</span>
                 <br />
-                <a className=" hover:text-primary" href="mailto:gulrajtradersmohali@gmail.com">
-                  gulrajtradersmohali@gmail.com
+                <a className=" hover:text-primary" href="mailto:grtrader37@gmail.com">
+                  grtrader37@gmail.com
                 </a>
               </p>
             </div>
