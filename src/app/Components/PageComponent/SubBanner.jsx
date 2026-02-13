@@ -5,8 +5,8 @@ import Button from "../UiUx/Button";
 import Link from "next/link";
 export const SubBanner = ({ title, description, btnname }) => {
   return (
-    <div className="py-30 main_banner relative ">
-      <div className="container m-auto">
+    <div className="py-18 lg:py-24 xl:py-30 main_banner relative ">
+      <div className="container m-auto px-4 md:px-0">
         <div className="text-center">
           <Title title={title} color={"text-white"} />
           <Description

@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const ReadytoTrade = () => {
   return (
-    <div className="py-16 bg-primary">
-      <div className="container m-auto">
+    <div className="py-12 md:py-16 bg-primary">
+      <div className="container m-auto px-4 md:px-0">
         <div className="text-center">
           <Title
             title={"Ready to Trade Makhana Globally?"}
@@ -22,7 +22,7 @@ const ReadytoTrade = () => {
           />
         </div>
 
-        <div className="flex justify-center gap-10 pt-8">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-10 pt-8 gap-y-4">
           <Link href={"mailto:gulrajtradersmohali@gmail.com"}>
             <Button btnname={"Get Export Quote"} />
           </Link>

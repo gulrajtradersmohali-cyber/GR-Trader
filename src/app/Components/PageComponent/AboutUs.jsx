@@ -48,9 +48,9 @@ const processSteps = [
 
 export const AboutIntro = () => {
   return (
-    <section className="bg-white pt-18">
-      <div className="container m-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+    <section className="bg-white pt-12 md:pt-18">
+      <div className="container m-auto px-4 md:px-0">
+        <div className="grid lg:grid-cols-2 md:gap-12 items-start">
           <div>
             <Title title={"Who We Are"} color={"text-primary"} />
             <Description
@@ -58,10 +58,10 @@ export const AboutIntro = () => {
                 "We are based in Mohali, Punjab, specializing in sourcing and exporting premium makhana with consistent quality and reliable supply."
               }
               color={"text-black"}
-              classname={"pt-5 max-w-2xl"}
+              classname={"pt-2 md:pt-5 max-w-2xl"}
             />
 
-            <div className="mt-8 space-y-5 text-black/80 leading-relaxed text-lg">
+            <div className="mt-4 md:mt-8 space-y-5 text-black/80 leading-relaxed text-base md:text-lg">
               <p>
                 Our focus is on stable procurement, hygienic handling, and
                 export-ready packaging. We aim to build long-term partnerships
@@ -79,17 +79,17 @@ export const AboutIntro = () => {
             </div>
           </div>
 
-          <div className="p-10 md:p-12">
+          <div className="px-2 py-6 md:px-12 md:py-12">
             <p className="text-black text-2xl font-semibold">
               What you can expect from us
             </p>
 
-            <div className="mt-8 space-y-6">
+            <div className="mt-4 md:mt-8 space-y-3 md:space-y-6">
               {highlights.map((h, i) =>
                 <div key={i} className="flex gap-4 items-start">
                   <span className="w-3 h-3 rounded-full bg-primary mt-2 shrink-0" />
                   <div>
-                    <p className="text-black font-semibold text-xl">
+                    <p className="text-black font-semibold text-lg md:text-xl">
                       {h.title}
                     </p>
                     <p className="text-black/70 text-lg mt-2 leading-relaxed">
@@ -107,8 +107,8 @@ export const AboutIntro = () => {
 };
 export const ProcessSection = () => {
   return (
-    <section className="pt-12">
-      <div className="container m-auto">
+    <section className="pt-6 md:pt-12">
+      <div className="container m-auto px-4 md:px-0">
         <div className="text-center">
           <Title title={"How We Work"} color={"text-primary"} />
           <Description
@@ -120,7 +120,7 @@ export const ProcessSection = () => {
           />
         </div>
 
-        <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-8 md:mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {processSteps.map((p, i) =>
             <div key={i} className="py-10 px-5 bg-primary rounded-3xl">
               <div className="flex items-center justify-between">
@@ -147,9 +147,9 @@ export const ProcessSection = () => {
 };
 export const Journey = () => {
   return (
-    <div className="py-20 bg-white">
-      <div className="container m-auto px-6">
-        <div className="text-center mb-16">
+    <div className="py-12 md:py-16 lg:py-20 bg-white">
+      <div className="container m-auto px-4 md:px-0">
+        <div className="text-center mb-10 md:mb-16">
           <Title title={"Our Journey"} color={"text-primary"} />
           <Description
             description={
@@ -195,9 +195,9 @@ export const Journey = () => {
 };
 export const OurMission = () => {
   return (
-    <div className="py-16 bg-gradient-to-br from-primary/10 via-white to-primary/5">
-      <div className="container m-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <div className="py-12 md:py-16 bg-gradient-to-br from-primary/30 via-white to-primary/15">
+      <div className="container m-auto px-4 md:px-0">
+        <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
     
           <div className="lg:order-1 space-y-8">
             <div>
@@ -239,13 +239,13 @@ export const OurMission = () => {
           </div>
 
           <div className="lg:order-2 text-center">
-            <div className="relative mx-auto max-w-md">
+            <div className="relative mx-auto md:max-w-md overflow-hidden md:overflow-visible py-4 md:py-0 rounded-2xl">
               <div className="w-full h-96 bg-gradient-to-br from-primary/30 via-transparent to-black/20 rounded-3xl shadow-2xl mx-auto relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent animate-pulse opacity-40 rounded-3xl"></div>
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary via-white/20 to-primary opacity-75 rounded-3xl blur-xl animate-spin-slow"></div>
               </div>
               
-              <div className="absolute -inset-12 bg-white/40 backdrop-blur-xl rounded-[3rem] border border-white/50 shadow-3xl flex items-center justify-center p-12 hover:scale-105 transition-all duration-500 group">
+              <div className="absolute -inset-12 bg-white/40 backdrop-blur-xl rounded-[3rem] border border-white/50 shadow-3xl flex items-center justify-center p-2 md:p-12 transition-all duration-500 group">
                 <div className="text-center max-w-md relative z-10">
                   <div className="w-28 h-28 bg-gradient-to-br from-primary via-black to-primary/80 rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-2xl group-hover:scale-110 transition-all duration-300 border-4 border-white/30">
                     <span className="text-4xl">🚀</span>

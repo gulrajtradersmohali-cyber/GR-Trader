@@ -55,8 +55,8 @@ const WhyChooseData = [
 
 const WhyChoose = () => {
   return (
-    <div className="pt-16">
-      <div className="container m-auto">
+    <div className="pt-12 md:pt-16">
+      <div className="container m-auto px-4 md:px-0">
         <div className="text-center">
           <Title
             title={"Why Choose International Makhana Trade?"}
@@ -71,7 +71,7 @@ const WhyChoose = () => {
           />
         </div>
 
-        <div className="pt-10 grid grid-cols-4 gap-5">
+        <div className="pt-6 md:pt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
           {
            WhyChooseData.map((data,index)=>{
             const Icon = data.icon 
@@ -80,7 +80,7 @@ const WhyChoose = () => {
                 <div className="p-5 bg-primary group-hover:bg-white w-fit rounded-full transition-all duration-500">
                 <Icon size={48} className="text-white group-hover:text-primary transition-all duration-500" />
                 </div>
-                <h3 className="pt-4 text-2xl font-semibold group-hover:text-white transition-all duration-500">
+                <h3 className="pt-4 text-xl 2xl:text-2xl font-semibold group-hover:text-white transition-all duration-500">
                    {data.title} 
                 </h3>
                 <p className="pt-4 text-base group-hover:text-white transition-all duration-500">
@@ -93,7 +93,7 @@ const WhyChoose = () => {
                      <li key={i} className="ps-4 text-lg font-medium italic pt-1 list-disc list-inside marker:text-primary group-hover:marker:text-white group-hover:text-white transition-all duration-500">
                         {d}
                      </li>
-                    ))
+                    ))  
                   }
                 </ul>
               </div>

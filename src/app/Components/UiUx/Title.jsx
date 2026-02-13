@@ -5,9 +5,9 @@ const Title = ({title, color, ish1}) => {
         <>
             {
                 ish1 ?
-                    <h1 className={`text-5xl font-semibold m-0 ${color}`} dangerouslySetInnerHTML={{__html : title}}/>
+                    <h1 className={`text-[30px] md:text-4xl 2xl:text-5xl font-semibold m-0 ${color}`} dangerouslySetInnerHTML={{__html : title}}/>
                     :
-                    <h2 className={`text-5xl font-semibold m-0 ${color}`} dangerouslySetInnerHTML={{__html : title}}/>
+                    <h2 className={`text-[30px] md:text-4xl 2xl:text-5xl font-semibold m-0 ${color}`} dangerouslySetInnerHTML={{__html : title}}/>
             }
         </>
     )

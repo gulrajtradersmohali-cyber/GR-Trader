@@ -84,7 +84,7 @@ const Dot = () =>
 export const ProductsIntro = () => {
   return (
     <Section className="bg-white">
-      <div className="container m-auto">
+      <div className="container m-auto px-4 md:px-0">
         <div className="text-center">
           <Title title={"Our Product Categories"} color={"text-primary"} />
           <Description
@@ -96,7 +96,7 @@ export const ProductsIntro = () => {
           />
         </div>
 
-        <div className="mt-14 grid md:grid-cols-3 gap-8">
+        <div className="mt-8 md:mt-14 grid md:grid-cols-3 gap-8">
           {products.map(p =>
             <Card key={p.key} className="p-6">
               <p className="text-primary font-semibold text-lg">
@@ -111,7 +111,7 @@ export const ProductsIntro = () => {
 
               <div className="mt-7">
                 <a href={`#${p.key}`} className="inline-flex">
-                  <span className="px-6 py-3 rounded-full bg-primary text-white font-semibold text-lg">
+                  <span className="px-4 md:px-6 py-2 md:py-3 rounded-full bg-primary text-white font-semibold text-lg">
                     View Details
                   </span>
                 </a>
@@ -129,7 +129,7 @@ const ProductBlock = ({ id, reverse, product }) => {
 
   return (
     <Section className={id === "roasted" ? "bg-[#f6f9f3]" : "bg-white"}>
-      <div id={id} className="container m-auto scroll-mt-28">
+      <div id={id} className="container m-auto scroll-mt-28  px-4 md:px-0">
         <div
           className={`grid lg:grid-cols-[2fr_3fr] gap-12 items-center ${reverse
             ? "lg:flex-row-reverse"
@@ -157,12 +157,12 @@ const ProductBlock = ({ id, reverse, product }) => {
               {badge}
             </p>
 
-            <div className="mt-2">
+            <div className="md:mt-2">
               <Title title={title} color={"text-primary"} />
               <Description
                 description={subtitle}
                 color={"text-black"}
-                classname={"pt-4 max-w-2xl"}
+                classname={"md:pt-4 max-w-2xl"}
               />
             </div>
 
@@ -170,7 +170,7 @@ const ProductBlock = ({ id, reverse, product }) => {
               {points.map((t, i) =>
                 <div key={i} className="flex gap-4 items-start">
                   <Dot />
-                  <p className="text-black/80 text-lg leading-relaxed">
+                  <p className="text-black/80 text-base md:text-lg leading-relaxed">
                     {t}
                   </p>
                 </div>
@@ -181,11 +181,11 @@ const ProductBlock = ({ id, reverse, product }) => {
               <p className="text-black font-semibold text-2xl">
                 {listTitle}
               </p>
-              <div className="mt-6 grid sm:grid-cols-2 gap-4">
+              <div className="mt-2 md:mt-6 grid sm:grid-cols-2 md:gap-4">
                 {list.map((l, i) =>
                   <div
                     key={i}
-                    className="bg-white border border-[#edf2ea] rounded-2xl py-2 px-6"
+                    className="bg-white border border-[#edf2ea] rounded-2xl pt-2 md:pb-2 px-3 md:px-6"
                   >
                     <p className="text-black font-semibold text-lg">
                       {l}
@@ -195,7 +195,7 @@ const ProductBlock = ({ id, reverse, product }) => {
               </div>
             </Card>
 
-            <div className="mt-10 flex gap-4 flex-wrap">
+            <div className="mt-8 md:mt-10 flex gap-4 flex-wrap">
               <Link href={"mailto:gulrajtradersmohali@gmail.com"}>
                 <Button btnname={"Request Quote"} />
               </Link>

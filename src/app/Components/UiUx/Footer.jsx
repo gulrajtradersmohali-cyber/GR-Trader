@@ -28,8 +28,8 @@ const socials = [
 const Footer = () => {
   return (
     <footer className="bg-[#f6f9f3] border-t border-[#edf2ea]">
-      <div className="container m-auto">
-        <div className="py-16 grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+      <div className="container m-auto px-4 md:px-0">
+        <div className="pb-4 pt-12 md:pt-16 md:pb-16 grid md:grid-cols-2 lg:grid-cols-4  gap-4 md:gap-12">
           <div>
             <h3 className="text-2xl font-bold text-black">EXPORT MAKHANA</h3>
 
@@ -118,7 +118,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="py-6 border-t border-[#edf2ea] flex flex-col md:flex-row justify-between gap-3 text-black/70 text-base">
+        <div className="py-6 border-t border-[#000000] flex flex-col md:flex-row justify-between md:gap-3 text-center text-black/70 text-base">
           <p>
             © {new Date().getFullYear()} Export Makhana. All rights reserved.
           </p>

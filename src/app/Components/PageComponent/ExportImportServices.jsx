@@ -37,8 +37,8 @@ const data = [
 
 const ExportImportServices = () => {
   return (
-    <div className="pt-16">
-      <div className="container m-auto">
+    <div className="pt-12 md:pt-16">
+      <div className="container m-auto px-4 md:px-0">
         <div className="text-center">
           <Title title={"Our Export-Import Services"} color={"text-primary"} />
           <Description
@@ -50,7 +50,7 @@ const ExportImportServices = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-12 pt-12">
+        <div className="grid lg:grid-cols-2 gap-12 pt-8 md:pt-12">
           {data.map((item, index) =>
             <div
               key={index}
@@ -62,7 +62,7 @@ const ExportImportServices = () => {
                 </span>
               </div>
 
-              <h2 className="text-2xl font-semibold text-black mb-3">
+              <h2 className="text-xl xl:text-2xl font-semibold text-black mb-3">
                 {item.title}
               </h2>
 

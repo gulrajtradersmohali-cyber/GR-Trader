@@ -93,8 +93,8 @@ const makhanaProducts = [
 
 const MakhanaCategories = () => {
   return (
-    <div className="pt-16">
-      <div className="container m-auto">
+    <div className="pt-12 md:pt-16">
+      <div className="container m-auto px-4 md:px-0">
         <div className="text-center">
           <Title title={"Makhana Export Categories"} color={"text-primary"} />
           <Description
@@ -104,7 +104,7 @@ const MakhanaCategories = () => {
           />
         </div>
 
-        <div className="space-y-6 grid grid-cols-2 pt-14 gap-10">
+        <div className="space-y-6 grid lg:grid-cols-2 pt-10 md:pt-14 gap-10">
           {makhanaProducts.map((item, index) => {
             const Icon = item.icon;
             return (
@@ -112,14 +112,14 @@ const MakhanaCategories = () => {
                 key={index}
                 className="grid md:grid-cols-[1fr_3fr_3fr] h-full bg-white rounded-3xl shadow-md hover:shadow-xl transition overflow-hidden border border-gray-100"
               >
-                <div className="flex items-center justify-center bg-linear-to-br from-primary/10 to-green-100 p-10">
+                <div className="flex items-center justify-center bg-linear-to-br from-primary/30 to-green-100 p-4 xl:p-10">
                   <div className="w-20 h-20 flex items-center justify-center bg-white text-primary rounded-2xl shadow-md">
                     <Icon className="text-3xl" />
                   </div>
                 </div>
 
-                <div className="md:col-span-2 p-8">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                <div className="md:col-span-2 p-4 xl:p-8">
+                  <h3 className="text-xl xl:text-2xl font-semibold text-gray-900 mb-2">
                     {item.title}
                   </h3>
 
@@ -127,7 +127,7 @@ const MakhanaCategories = () => {
                     {item.description}
                   </p>
 
-                  <div className="grid sm:grid-cols-2 gap-6">
+                  <div className="grid sm:grid-cols-2 gap-2 xl:gap-6">
                     <div>
                       <p className="text-primary font-semibold mb-3">
                         {item.subtitle}
@@ -157,7 +157,7 @@ const MakhanaCategories = () => {
                         <Link
                          href={'tel:+919872487850'}
                          >
-                        <button className="bg-primary text-white px-4 py-2 rounded-full cursor-pointer text-sm hover:bg-primary/90">
+                        <button className="bg-primary text-white px-2 xl:px-4 py-2 rounded-full cursor-pointer text-sm hover:bg-primary/90">
                           Request Quote
                         </button>
                         </Link>

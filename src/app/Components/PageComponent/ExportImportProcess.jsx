@@ -66,8 +66,8 @@ const processSteps = [
 ];
 const ExportImportProcess = () => {
   return (
-    <div className="pt-16">
-      <div className="container m-auto">
+    <div className="pt-12 md:pt-16">
+      <div className="container m-auto px-4 md:px-0">
         <div className="text-center">
           <Title title={"Export-Import Process"} color={"text-primary"} />
           <Description
@@ -79,14 +79,14 @@ const ExportImportProcess = () => {
           />
         </div>
 
-        <div className="relative pt-16">
+        <div className="relative pt-12 md:pt-16">
           <div className="absolute top-18 left-0 w-full h-0.5 bg-[#e3eadf] hidden lg:block" />
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-1 md:gap-8 relative z-10 space-y-4 md:space-y-0">
             {processSteps.map((item, index) =>
               <div
                 key={index}
-                className="group bg-white rounded-2xl p-6 border border-r-4 border-r-primary border-b-4 border-b-primary border-[#edf2ea] shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                className="group bg-white rounded-2xl px-4 py-3 md:px-6 md:py-6 border border-r-4 border-r-primary border-b-4 border-b-primary border-[#edf2ea] shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white font-semibold text-lg mb-5 shadow-sm border border-white">
                   {index + 1}

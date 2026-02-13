@@ -10,7 +10,7 @@ const contactInfo = [
     label: "Phone",
     values: [
       { number: "+91 99150 83667", href: "tel:+919915083667" },
-      { number: "+91 98724 87850", href: "tel:+919872487850" } 
+      { number: "+91 98724 87850", href: "tel:+919872487850" }
     ],
     note: "Mon–Sat, 10:00 AM – 7:00 PM"
   },
@@ -56,7 +56,7 @@ export const ContactBanner = () => {
 
   return (
     <div
-      className="py-28 md:py-32 main_banner relative"
+      className="py-18 md:py-24 lg:py-28 xl:py-32 main_banner relative"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url(${bg})`,
         backgroundSize: "cover",
@@ -90,7 +90,7 @@ export const ContactBanner = () => {
 export const ContactDetails = () => {
   return (
     <Section className="bg-white">
-      <div id="contact-details" className="container m-auto scroll-mt-28">
+      <div id="contact-details" className="container m-auto px-4 md:px-0">
         <div className="text-center">
           <Title title={"Get in Touch"} color={"text-primary"} />
           <Description
@@ -98,13 +98,16 @@ export const ContactDetails = () => {
               "We are available on phone and email for all export & bulk inquiries."
             }
             color={"text-black"}
-            classname={"pt-5 max-w-3xl m-auto"}
+            classname={"md:pt-5 max-w-3xl m-auto"}
           />
         </div>
 
-        <div className="mt-14 grid md:grid-cols-2 gap-8 max-w-5xl m-auto">
+        <div className="mt-10 md:mt-14 grid md:grid-cols-2 gap-8 max-w-5xl m-auto">
           {contactInfo.map((c, i) =>
-            <Card key={i} className="p-10">
+            <Card
+              key={i}
+              className="p-4 md:p-10 border-2 border-black/30 md:border-none"
+            >
               <p className="text-primary font-semibold text-lg">
                 {c.label}
               </p>
@@ -115,14 +118,14 @@ export const ContactDetails = () => {
                       <a
                         key={index}
                         href={p.href}
-                        className="block text-black font-semibold text-2xl break-words"
+                        className="block text-black font-semibold text-xl md:text-2xl break-words"
                       >
                         {p.number}
                       </a>
                     )
                   : <a
                       href={c.href}
-                      className="block text-black font-semibold text-2xl break-words"
+                      className="block text-black font-semibold text-xl md:text-2xl break-words"
                     >
                       {c.value}
                     </a>}
@@ -132,9 +135,9 @@ export const ContactDetails = () => {
                 {c.note}
               </p>
 
-              <div className="mt-8">
+              <div className="mt-4 md:mt-8">
                 <a href={c.label === "Phone" ? c.values[0].href : c.href}>
-                  <span className="inline-flex px-7 py-3.5 rounded-full bg-primary text-white font-semibold text-lg">
+                  <span className="inline-flex px-5 md:px-7 py-2 md:py-3.5 rounded-full bg-primary text-white font-semibold text-lg">
                     {c.label === "Email" ? "Send Email" : "Call Now"}
                   </span>
                 </a>
@@ -149,8 +152,8 @@ export const ContactDetails = () => {
 export const ContactInfoSection = () => {
   return (
     <Section className="bg-[#f6f9f3]">
-      <div className="container m-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+      <div className="container m-auto px-4 md:px-0">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-12 items-start">
           <div>
             <Title title={"Office & Support"} color={"text-primary"} />
             <Description
@@ -158,10 +161,10 @@ export const ContactInfoSection = () => {
                 "For faster response, share product type (raw/roasted/private label), quantity, and destination country."
               }
               color={"text-black"}
-              classname={"pt-5 max-w-2xl"}
+              classname={"md:pt-5 max-w-2xl"}
             />
 
-            <div className="mt-10 space-y-5">
+            <div className="mt-5 md:mt-10 space-y-5">
               {[
                 "Product: Raw Makhana / Roasted Makhana / Private Label",
                 "Grade/Flavor preference",
@@ -170,7 +173,7 @@ export const ContactInfoSection = () => {
               ].map((t, i) =>
                 <div key={i} className="flex gap-4 items-start">
                   <Dot />
-                  <p className="text-black/80 text-lg leading-relaxed">
+                  <p className="text-black/80 text-base md:text-lg leading-relaxed">
                     {t}
                   </p>
                 </div>
@@ -180,11 +183,11 @@ export const ContactInfoSection = () => {
 
           <div className="grid sm:grid-cols-2 gap-6">
             {officeDetails.map((o, i) =>
-              <Card key={i} className="p-8 md:p-10">
+              <Card key={i} className="p-4 md:p-10">
                 <p className="text-black font-semibold text-xl">
                   {o.title}
                 </p>
-                <p className="text-black/70 text-lg mt-3 leading-relaxed">
+                <p className="text-black/70 text-base md:text-lg md:mt-3 leading-relaxed">
                   {o.desc}
                 </p>
               </Card>

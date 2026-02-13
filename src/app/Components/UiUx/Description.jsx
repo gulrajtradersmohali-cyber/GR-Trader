@@ -3,7 +3,7 @@ import React from "react";
 const Description = ({ description, color, classname }) => {
   return (
     <p
-      className={`text-xl ${color} ${classname}`}
+      className={`text-base md:text-lg 2xl:text-xl ${color} ${classname}`}
       dangerouslySetInnerHTML={{ __html: description }}
     />
   );

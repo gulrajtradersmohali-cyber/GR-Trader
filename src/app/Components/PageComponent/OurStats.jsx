@@ -36,8 +36,8 @@ const statsData = [
 const CountUp = dynamic(() => import("react-countup"), { ssr: false });
 const OurStats = () => {
   return (
-    <div className="py-16">
-      <div className="container m-auto">
+    <div className="py-12 md:py-16">
+      <div className="container m-auto px-4 md:px-0">
         <div className="text-center">
           <Title title={"Export-Import Process"} color={"text-primary"} />
           <Description
@@ -49,13 +49,13 @@ const OurStats = () => {
           />
         </div>
 
-        <div className="grid sm:grid-cols-2 rounded-2xl lg:grid-cols-4 mt-12 max-w-5xl m-auto bg-primary">
+        <div className="grid sm:grid-cols-2 rounded-2xl lg:grid-cols-4 mt-8 md:mt-12 max-w-5xl m-auto bg-primary py-8 md:py-0">
           {statsData.map(item =>
             <div
               key={item.id}
-              className="group py-4 px-8 text-center transition-all duration-300 hover:-translate-y-1 "
+              className="group md:py-4 px-8 text-center transition-all duration-300 hover:-translate-y-1 "
             >
-              <h3 className="text-[60px] font-bold text-white mb-3">
+              <h3 className="text-[50px] md:text-[60px] leading-normal font-bold text-white mb-3">
                 <CountUp
                   start={0}
                   end={item.number}
@@ -68,7 +68,6 @@ const OurStats = () => {
               <h4 className="text-lg font-semibold text-white mb-2">
                 {item.title}
               </h4>
-              <div className="mt-6 h-[3px] w-0 bg-[#79b84a] group-hover:w-full transition-all duration-300 mx-auto rounded-full" />
             </div>
           )}
         </div>
