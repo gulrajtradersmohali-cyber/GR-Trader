@@ -8,6 +8,7 @@ import {
   FaYoutube,
   FaXTwitter
 } from "react-icons/fa6";
+import Image from "next/image";
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -31,7 +32,17 @@ const Footer = () => {
       <div className="container m-auto px-4 md:px-0">
         <div className="pb-4 pt-12 md:pt-16 md:pb-16 grid md:grid-cols-2 lg:grid-cols-4  gap-4 md:gap-12">
           <div>
-            <h3 className="text-2xl font-bold text-black">EXPORT MAKHANA</h3>
+            <Link
+             href={'/'}
+             >
+             <Image
+              src={'/images/logo.png'}
+              alt=""
+              width={1000}
+              height={500}
+              className="max-w-[200px]"
+              />
+             </Link>
 
             <p className="text-black/70 text-lg mt-4 leading-relaxed">
               Premium makhana sourcing, bulk supply, and export support for
@@ -120,7 +131,7 @@ const Footer = () => {
 
         <div className="py-6 border-t border-[#000000] flex flex-col md:flex-row justify-between md:gap-3 text-center text-black/70 text-base">
           <p>
-            © {new Date().getFullYear()} Export Makhana. All rights reserved.
+            © {new Date().getFullYear()} GR Trader. All rights reserved.
           </p>
           <p>Built for bulk orders & export inquiries</p>
         </div>

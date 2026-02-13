@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Button from "./Button";
 import { CgMenu } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
+import Image from "next/image";
 
 const headerdata = [
   { id: 1, page_name: "Home", page_link: "/" },
@@ -45,11 +46,17 @@ const Header = () => {
 
   return (
     <>
-      <header className="py-4 2xl:py-8 px-4 md:px-0">
+      <header className="py-4 2xl:py-7 px-4 md:px-0">
         <div className="container mx-auto flex items-center justify-between">
           <div>
             <Link href={"/"}>
-              <h3 className="text-2xl md:text-3xl uppercase font-bold">Export Makhana</h3>
+              <Image
+               src={'/images/logo.png'}
+               alt=""
+               width={1000}
+               height={500}
+               className="max-w-[170px] md:max-w-[220px] lg:max-w-[250px] xl:max-w-[280px]"
+               />
             </Link>
           </div>
 
@@ -137,6 +144,9 @@ const Header = () => {
               <div className="mt-4 space-y-2">
                 <a href="tel:+919915083667" className="block text-black font-semibold text-lg">
                   +91 99150 83667
+                </a>
+                <a href="tel:+919872487850" className="block text-black font-semibold text-lg">
+                  +91 98724 87850
                 </a>
                 <a href="mailto:gulrajtradersmohali@gmail.com" className="block text-black/70 text-base break-words">
                   gulrajtradersmohali@gmail.com

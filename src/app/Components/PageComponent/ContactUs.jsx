@@ -106,7 +106,7 @@ export const ContactDetails = () => {
           {contactInfo.map((c, i) =>
             <Card
               key={i}
-              className="p-4 md:p-10 border-2 border-black/30 md:border-none"
+              className="p-4 md:p-10 border-2 border-black/30 "
             >
               <p className="text-primary font-semibold text-lg">
                 {c.label}

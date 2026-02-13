@@ -6,6 +6,7 @@ import Button from "../UiUx/Button";
 import ReadytoTrade from "./ReadytoTrade";
 import SubBanner from "./SubBanner";
 import Link from "next/link";
+import Image from "next/image";
 
 const products = [
   {
@@ -20,8 +21,7 @@ const products = [
     listTitle: "Available Grades",
     list: ["4 Suta (Premium Large Size)", "5 Suta", "6 Suta", "Standard Grade"],
     badge: "Farm Fresh",
-    image:
-      "https://images.unsplash.com/photo-1506354666786-959d6d497f1a?auto=format&fit=crop&w=1600&q=60"
+    image: "/images/Raw Makhana.webp"
   },
   {
     key: "roasted",
@@ -42,7 +42,7 @@ const products = [
     ],
     badge: "Ready to Sell",
     image:
-      "https://images.unsplash.com/photo-1604909052743-94e83888f3bd?auto=format&fit=crop&w=1600&q=60"
+      "/images/Roasted Makhana.webp"
   },
   {
     key: "private-label",
@@ -63,7 +63,7 @@ const products = [
     ],
     badge: "Custom Branding",
     image:
-      "https://images.unsplash.com/photo-1585675100414-3d1b0b5c8d4d?auto=format&fit=crop&w=1600&q=60"
+      "/images/Private Label Packaging.png"
   }
 ];
 const Section = ({ className = "", children }) =>
@@ -137,19 +137,7 @@ const ProductBlock = ({ id, reverse, product }) => {
         >
           {/* Image */}
           <div className={reverse ? "lg:order-2" : "lg:order-1"}>
-            <div
-              className="rounded-3xl overflow-hidden border border-[#edf2ea]"
-              style={{ background: "#f6f9f3" }}
-            >
-              <div
-                className="w-full h-[340px] md:h-[420px]"
-                style={{
-                  backgroundImage: `url(${image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center"
-                }}
-              />
-            </div>
+            <Image src={image} alt="" width={1000} height={500} className="rounded-3xl" />
           </div>
 
           <div className={reverse ? "lg:order-1" : "lg:order-2"}>
