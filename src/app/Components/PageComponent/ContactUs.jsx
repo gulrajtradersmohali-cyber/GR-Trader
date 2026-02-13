@@ -25,7 +25,7 @@ const contactInfo = [
 const officeDetails = [
   {
     title: "Office Address",
-    desc: "Mohali, Punjab, India (export operations & dispatch support)"
+    desc: "F-209, Sector 74, Mohali, 160074 IND +91 9872487850"
   },
   { title: "Business Hours", desc: "Monday – Saturday | 10:00 AM – 7:00 PM" },
   { title: "Response Time", desc: "Typically within 24 hours on email" },
@@ -118,14 +118,14 @@ export const ContactDetails = () => {
                       <a
                         key={index}
                         href={p.href}
-                        className="block text-black font-semibold text-xl md:text-2xl break-words"
+                        className="block text-black hover:text-primary font-semibold text-xl md:text-2xl break-words"
                       >
                         {p.number}
                       </a>
                     )
                   : <a
                       href={c.href}
-                      className="block text-black font-semibold text-xl md:text-2xl break-words"
+                      className="block text-black hover:text-primary font-semibold text-xl md:text-2xl break-words"
                     >
                       {c.value}
                     </a>}
@@ -187,7 +187,7 @@ export const ContactInfoSection = () => {
                 <p className="text-black font-semibold text-xl">
                   {o.title}
                 </p>
-                <p className="text-black/70 text-base md:text-lg md:mt-3 leading-relaxed">
+                <p className="text-black/70 text-base hover:text-primary md:text-lg md:mt-3 leading-relaxed">
                   {o.desc}
                 </p>
               </Card>

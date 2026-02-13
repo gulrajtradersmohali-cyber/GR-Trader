@@ -27,7 +27,7 @@ const ReadytoTrade = () => {
             <Button btnname={"Get Export Quote"} />
           </Link>
           <Link href={"tel:+919915083667"}>
-            <Button btnname={"Export Catalog"} btn_secondary={true} />
+            <Button btnname={"Contact Sales"} btn_secondary={true} />
           </Link>
         </div>
       </div>

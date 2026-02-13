@@ -77,7 +77,7 @@ const Footer = () => {
             <ul className="mt-5 space-y-3">
               {quickLinks.map((l, i) =>
                 <li key={i}>
-                  <Link href={l.href} className="text-black/70 text-lg">
+                  <Link href={l.href} className="text-black/70 hover:text-primary text-lg">
                     {l.name}
                   </Link>
                 </li>
@@ -90,17 +90,17 @@ const Footer = () => {
 
             <div className="mt-5 space-y-4 text-lg text-black/70">
               <p>
-                <span className="font-semibold text-black">Phone:</span>
+                <span className="font-semibold text-black ">Phone:</span>
                 <br />
-                <a href="tel:+919915083667">+91 99150 83667</a>
+                <a className=" hover:text-primary" href="tel:+919915083667">+91 99150 83667</a>
                 <br />
-                <a href="tel:+919872487850">+91 98724 87850</a>
+                <a className=" hover:text-primary" href="tel:+919872487850">+91 98724 87850</a>
               </p>
 
               <p>
                 <span className="font-semibold text-black">Email:</span>
                 <br />
-                <a href="mailto:gulrajtradersmohali@gmail.com">
+                <a className=" hover:text-primary" href="mailto:gulrajtradersmohali@gmail.com">
                   gulrajtradersmohali@gmail.com
                 </a>
               </p>
@@ -112,9 +112,12 @@ const Footer = () => {
 
             <div className="mt-5 space-y-4 text-lg text-black/70">
               <p>
-                <span className="font-semibold text-black">Address:</span>
+                <span className="font-semibold text-black ">Address:</span>
                 <br />
-                Mohali, Punjab, India
+                <span className=" hover:text-primary"> 
+
+                F-209, Sector 74, Mohali, 160074 IND +91 9872487850
+                </span>
               </p>
 
               <p>
@@ -122,8 +125,11 @@ const Footer = () => {
                   Business Hours:
                 </span>
                 <br />
+                <span className=" hover:text-primary">
                 Monday – Saturday<br />
                 10:00 AM – 7:00 PM
+
+                </span>
               </p>
             </div>
           </div>
