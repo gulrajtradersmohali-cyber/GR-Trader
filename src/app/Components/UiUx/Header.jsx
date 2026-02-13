@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="py-4 md:py-8 px-4 md:px-0">
+      <header className="py-4 2xl:py-8 px-4 md:px-0">
         <div className="container mx-auto flex items-center justify-between">
           <div>
             <Link href={"/"}>
